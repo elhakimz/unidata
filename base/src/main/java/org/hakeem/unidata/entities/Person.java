@@ -10,6 +10,10 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+/**
+ * A Person is a free entity, before it is defined as a party with role.
+ * A person can only have one party
+ */
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data

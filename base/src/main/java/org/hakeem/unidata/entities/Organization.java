@@ -7,6 +7,10 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.UUID;
 
+/**
+ * an organization is a free entity
+ * before it is defined as a party with type ORGANiZAtiON
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity

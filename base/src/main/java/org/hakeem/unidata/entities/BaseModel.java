@@ -11,6 +11,9 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.UUID;
 
+/**
+ * This is the base model of all data models in UniData
+ */
 @MappedSuperclass
 @Data
 public class BaseModel implements Serializable, Cloneable {

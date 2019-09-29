@@ -8,6 +8,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
+/**
+ * Class Party Address
+ * store information about an address of a party
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
@@ -26,9 +30,15 @@ public class PartyAddress extends BaseModel {
     @Column
     private String state;
 
+    /**
+     * is it current/prime address ?
+     */
     @Column
     private Boolean prime = false;
 
+    /**
+     * owner of the address
+     */
     @ManyToOne
     private Party party;
 

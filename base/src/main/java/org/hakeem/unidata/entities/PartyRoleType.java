@@ -7,6 +7,9 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
+/**
+ * Type of roles
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity

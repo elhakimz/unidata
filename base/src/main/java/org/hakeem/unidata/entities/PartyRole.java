@@ -10,6 +10,11 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+/**
+ * class Party Role
+ * Before a party involved in a business by relationship
+ * a role must be defined like Customer, Contact, Employee or Partner
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
