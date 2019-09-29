@@ -12,33 +12,24 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @EqualsAndHashCode(callSuper = true)
-@Entity
 @Data
-public class Person extends BaseModel {
+@Entity
+public class PartyRole extends BaseModel {
 
-
-    @NotNull @NotEmpty
-    @Column
-    private String firstName;
-
-    @NotNull @NotEmpty
-    @Column
-    private String lastName;
-
-
-    @Column
-    private String nickName;
-
-    @Column
-    private LocalDate birthDate;
-
-    @Column
-    private String birthPlace;
-
-    @Column
-    private String idNumber;
 
     @ManyToOne
     private Party party;
 
+    @ManyToOne
+    private PartyRoleType roleType;
+
+    @NotNull @NotEmpty
+    @Column
+    private String name;
+
+    @Column
+    private LocalDate startDate;
+
+    @Column
+    private LocalDate endDate;
 }
