@@ -1,0 +1,3 @@
+What is Universal Data Model ?
+
+A universal data model is a generic or template data model that can be used as a building block to jump-start development of the corporate data model, logical data model or data warehouse data model. 
