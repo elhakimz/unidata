@@ -1,8 +1,7 @@
-package org.hakeem.unidata.hr.entities;
+package org.hakeem.unidata.entities;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.entities.BaseModel;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;

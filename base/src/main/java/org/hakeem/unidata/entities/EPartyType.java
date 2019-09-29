@@ -1,4 +1,4 @@
-package org.hakeem.unidata.hr.entities;
+package org.hakeem.unidata.entities;
 
 public enum EPartyType {
     PERSON, ORGANIZATION
