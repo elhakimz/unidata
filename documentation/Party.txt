@@ -1,0 +1,26 @@
+Party Based Business Data Model
+---------------------------------
+The business entity before their involvement in a business activity are classified
+with two type: Person or Organization, Singular or Plural
+A Person is a singular/personal Entity , while an organization is anentity which contains a set of one or more  person
+A person's basic data commonly record the first name, last name, age and Social Security Number
+An organization basic data contains record the name of the company and company license number and/or Tax Id number.
+A division, department, political party and company are Organization
+John Doe, Jane Doe, Mr. Smith are People/Person.
+
+A business is defined with a set of person or organization business relationship,
+To be defined as business entity, A Person or Organization must be defined as Participants or Party.
+To conduct as business participant, the Party's roles should be known for example as
+Customer, Supplier, Company, Shareholder, etc. Which later will be described.
+
+To create a business/transaction , the relationship of the Party Roles should be recorded
+For example:
+   Customer<=> Supplier will define a relationship as Supply Line
+   Employee <=>  Company  will define a relationship as Employment
+   Buyer <=> Company will define a relationship as Purchase
+A party relationship would set it's valid dates between From date until end date as in Agreement.
+
+
+
+
+
