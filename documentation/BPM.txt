@@ -1,0 +1,12 @@
+Business Process Management
+----------------------------
+
+For Data operation process, which only perform  simple data operation like
+adding Contacts, Definitions, Types, the process will use @Service call which
+act as a proxy or decorator.
+
+While 'complex' operations , for example Employment, Termination, Purchasing, Contract agreement etc which needs
+more than simple steps and variables like time, manual operation and approval in business logic
+BPM will be used,  currently Activiti BPM is more Developer friendly and had good integration
+with Spring eco-system , rather than other BPM Package like JBPM or Bonita.
+
