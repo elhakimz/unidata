@@ -2,8 +2,8 @@ package org.hakeem.unidata.hr.entities.employee;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hakeem.unidata.base.entities.Party;
 import org.hakeem.unidata.core.commons.BaseModel;
-import org.hakeem.unidata.entities.Party;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

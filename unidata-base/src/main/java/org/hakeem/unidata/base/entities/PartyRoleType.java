@@ -1,20 +1,23 @@
-package org.hakeem.unidata.hr.entities.employee;
+package org.hakeem.unidata.base.entities;
+
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hakeem.unidata.core.commons.BaseModel;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
+/**
+ * Type of roles
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class PositionType extends BaseModel {
+public class PartyRoleType extends BaseModel {
 
-    private String description;
 
-    private String title;
-
-    private Double benefitPct;
+    @Column
+    private String name;
 
 }
