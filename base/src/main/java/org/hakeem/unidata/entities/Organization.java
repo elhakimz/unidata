@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 /**
@@ -24,6 +25,10 @@ public class Organization extends BaseModel {
 
     @ManyToOne
     private Party party;
+
+    @NotBlank(message = "{base.name.notempty}")
+    @Column
+    private String name;
 
     @Column
     private String taxIdNumber;

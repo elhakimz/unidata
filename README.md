@@ -6,8 +6,12 @@ This is an effort for implementing Len's Silverston Universal Data Model in a mo
 
 Currently this implementation is at very early stage.
 
-TODO
+*TODO*
  - Multi-Tenant
  - Kubernetes
  - Well UX
+ 
+ *BUILDING*
+ 
+ This project is built upon Spring Boot 
  

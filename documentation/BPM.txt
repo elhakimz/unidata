@@ -10,3 +10,5 @@ more than simple steps and variables like time, manual operation and approval in
 BPM will be used,  currently Activiti BPM is more Developer friendly and had good integration
 with Spring eco-system , rather than other BPM Package like JBPM or Bonita.
 
+The process itself will be defined using BPMN (Business Process Management Notation)
+

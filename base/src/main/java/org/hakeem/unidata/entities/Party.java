@@ -8,7 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 
@@ -28,7 +28,7 @@ public class Party extends BaseModel {
      * Name of the party
      */
     @NotNull
-    @NotEmpty
+    @NotBlank(message="{base.name.notempty}")
     @Column
     private String name;
 
