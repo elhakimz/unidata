@@ -1,8 +1,9 @@
 package org.hakeem.unidata.base.services;
 
-import org.hakeem.unidata.base.entities.*;
-import org.hakeem.unidata.base.repositories.*;
+
 import org.hakeem.unidata.core.commons.BaseService;
+import org.hakeem.unidata.model.entities.*;
+import org.hakeem.unidata.model.repositories.*;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -102,8 +103,8 @@ public class PartyService  extends BaseService {
      */
     @NotNull
     public PartyRole applyRole(@NotNull Party party, @NotNull PartyRoleType roleType,
-                                 String name,
-                                 LocalDate fromDate, LocalDate thruDate){
+                               String name,
+                               LocalDate fromDate, LocalDate thruDate){
         PartyRole partyRole= new PartyRole();
         partyRole.setParty(party);
         partyRole.setRoleType(roleType);

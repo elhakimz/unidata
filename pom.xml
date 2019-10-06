@@ -9,6 +9,7 @@
 		<module>unidata-hr</module>
 		<module>unidata-admin</module>
 		<module>unidata-bpm</module>
+		<module>unidata-model</module>
 	</modules>
 
     <parent>
