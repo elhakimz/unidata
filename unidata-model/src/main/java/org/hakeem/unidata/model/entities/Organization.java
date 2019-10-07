@@ -2,7 +2,7 @@ package org.hakeem.unidata.model.entities;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -16,7 +16,7 @@ import java.util.UUID;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class Organization extends BaseModel {
+public class Organization extends BaseEntity {
 
     @Id
     @GeneratedValue(generator = "uuid2")

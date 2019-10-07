@@ -1,23 +1,27 @@
-package org.hakeem.unidata.model.entities;
-
+package org.hakeem.unidata.model.entities.hr;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
 /**
- * Type of roles
+ * author abil
+ *
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 @Entity
-public class PartyRoleType extends BaseEntity {
+@Data
+public class PayGrade extends BaseEntity {
 
 
     @Column
+    private String gradeId;
+
+    @Column
     private String name;
+
+    @Column
+    private String comment;
 
 }

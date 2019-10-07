@@ -3,7 +3,7 @@ package org.hakeem.unidata.model.entities;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,7 +23,7 @@ import javax.validation.constraints.NotNull;
 @Data
 @ToString
 @Entity
-public class Party extends BaseModel {
+public class Party extends BaseEntity {
 
     /**
      * Name of the party
@@ -38,4 +38,10 @@ public class Party extends BaseModel {
      */
     @Enumerated(EnumType.STRING)
     private EPartyType type;
+
+    /**
+     * credit rating
+     */
+    @Column
+    private int creditRating;
 }

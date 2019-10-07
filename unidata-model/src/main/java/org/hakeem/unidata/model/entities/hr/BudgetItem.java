@@ -3,7 +3,7 @@ package org.hakeem.unidata.model.entities.hr;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +20,7 @@ import java.math.BigDecimal;
  * Budget Item
  *
  */
-public class BudgetItem extends BaseModel {
+public class BudgetItem extends BaseEntity {
 
     @NotEmpty
     @Column

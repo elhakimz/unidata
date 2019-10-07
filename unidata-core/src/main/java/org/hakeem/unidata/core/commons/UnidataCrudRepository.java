@@ -18,7 +18,7 @@ import java.util.UUID;
  */
 @Transactional
 @NoRepositoryBean
-public interface UnidataCrudRepository<T extends BaseModel, ID extends UUID>  extends PagingAndSortingRepository<T, ID> {
+public interface UnidataCrudRepository<T extends BaseEntity, ID extends UUID>  extends PagingAndSortingRepository<T, ID> {
 
     @NotNull
     @Override

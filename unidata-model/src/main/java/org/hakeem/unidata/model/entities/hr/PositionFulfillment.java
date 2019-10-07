@@ -2,7 +2,7 @@ package org.hakeem.unidata.model.entities.hr;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 import org.hakeem.unidata.model.entities.Party;
 
 import javax.persistence.Column;
@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-public class PositionFulfillment extends BaseModel {
+public class PositionFulfillment extends BaseEntity {
 
     @Column
     private LocalDate fromDate;
@@ -27,6 +27,10 @@ public class PositionFulfillment extends BaseModel {
     @ManyToOne
     private Position fulfillmentOfPos;
 
+
     @ManyToOne
     private Party acceptedBy;
+
+
+
 }

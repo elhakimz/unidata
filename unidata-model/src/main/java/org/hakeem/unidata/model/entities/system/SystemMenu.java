@@ -2,7 +2,7 @@ package org.hakeem.unidata.model.entities.system;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -13,7 +13,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class SystemMenu extends BaseModel implements Serializable, Cloneable{
+public class SystemMenu extends BaseEntity implements Serializable, Cloneable{
 
 
     @Column

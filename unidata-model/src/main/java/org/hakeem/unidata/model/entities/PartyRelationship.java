@@ -3,7 +3,7 @@ package org.hakeem.unidata.model.entities;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -17,7 +17,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class PartyRelationship extends BaseModel {
+public class PartyRelationship extends BaseEntity {
 
 
     /**

@@ -3,7 +3,7 @@ package org.hakeem.unidata.model.entities;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +19,7 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-public class Agreement extends BaseModel {
+public class Agreement extends BaseEntity {
 
     /**
      * agreement number

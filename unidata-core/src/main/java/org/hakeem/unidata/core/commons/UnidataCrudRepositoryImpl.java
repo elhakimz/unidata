@@ -41,7 +41,7 @@ import static java.util.Objects.requireNonNull;
  * @param <T>   the class of the entity
  * @param <ID>   the ID class of the entity
  */
-public class UnidataCrudRepositoryImpl<T extends BaseModel, ID extends UUID> extends SimpleJpaRepository<T, ID> implements UnidataCrudRepository<T,ID> {
+public class UnidataCrudRepositoryImpl<T extends BaseEntity, ID extends UUID> extends SimpleJpaRepository<T, ID> implements UnidataCrudRepository<T,ID> {
 
     private final JpaEntityInformation<T, ?> entityInformation;
     private final EntityManager em;

@@ -3,7 +3,7 @@ package org.hakeem.unidata.model.entities;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +17,7 @@ import javax.persistence.ManyToOne;
 @Data
 @Entity
 @ToString
-public class PartyAddress extends BaseModel {
+public class PartyAddress extends BaseEntity {
 
     @Column
     private String street;

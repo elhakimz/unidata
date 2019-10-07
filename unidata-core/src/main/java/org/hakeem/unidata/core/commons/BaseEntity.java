@@ -17,7 +17,7 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseModel implements Serializable, Cloneable {
+public class BaseEntity implements Serializable, Cloneable {
 
     protected static final String NOT_DELETED = "deleted_on > CURRENT_TIMESTAMP OR deleted_on IS NULL";
 

@@ -2,7 +2,7 @@ package org.hakeem.unidata.model.entities.hr;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hakeem.unidata.core.commons.BaseModel;
+import org.hakeem.unidata.core.commons.BaseEntity;
 import org.hakeem.unidata.model.entities.Party;
 
 import javax.persistence.*;
@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class Position  extends BaseModel {
+public class Position  extends BaseEntity {
 
     @ManyToOne
     private PositionType describedBy;
@@ -45,5 +45,8 @@ public class Position  extends BaseModel {
 
     @Column
     private LocalDate actThruDate;
+
+    @Column
+    private BudgetItem approvedThru;
 
 }
